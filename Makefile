@@ -1,7 +1,7 @@
 CC := clang
 CXX := clang++
 
-CFLAGS += -Iminizip -I../libplist/include -I. -mno-sse
+CFLAGS += -Iminizip -I../libplist/include -I. -fPIC
 CXXFLAGS := $(CFLAGS) -std=c++17
 
 src := $(wildcard *.cpp)
